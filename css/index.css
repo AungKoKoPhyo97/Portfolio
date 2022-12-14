@@ -1,6 +1,7 @@
-body,
-html {
-  font-family: "Questrial", serif;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa');
+
+body,html {
+  font-family: "Comfortaa", sans-serif;
   font-size: 15px;
   height: 100%;
   margin: 0;
@@ -145,34 +146,57 @@ body {
 }
 
 .txtfield {
+  color: #fff;
+  background-color: transparent;
   width: 20%;
   height: 50px;
   margin: 2%;
   padding: 10px;
   border-radius: 10px;
-  border: #693568 solid 1px;
+  border: #fefefe solid 2px;
 }
 
-.txtfield_xl {
+.textarea {
+  color: #fff;
+  background-color: transparent;
   display: block;
   margin: auto;
   width: 69%;
   height: 200px;
   padding: 10px;
   border-radius: 10px;
-  border: #693568 solid 1px;
+  border: #ffffff solid 2px;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(237, 237, 237);
 }
 
 .btn {
   cursor: pointer;
-  border: 1px solid #693568;
-filter: blur(4px);
+  border: 2px solid #ffffff;
+  background-color: transparent;
   height: 50px;
   width: 200px;
   color: #ffffff;
+  font-weight: 600;
   font-size: 15px;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
   margin-right: 50px !important;
+}
+
+.btn:hover {
+  background-color: #693568; /* Green */
+  color: white;
 }
 
 .txt_end {
@@ -183,4 +207,11 @@ filter: blur(4px);
   padding: 30px;
   width: 70%;
   margin: auto;
+}
+
+.div_resume {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  line-height: 50px;
 }
