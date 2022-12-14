@@ -1,0 +1,186 @@
+body,
+html {
+  font-family: "Questrial", serif;
+  font-size: 15px;
+  height: 100%;
+  margin: 0;
+}
+
+.overlay {
+  margin: auto;
+  position: absolute;
+  top: 70%;
+}
+
+.overlay span {
+  background: rgb(2, 2, 2) none repeat scroll 0 0;
+  color: rgb(252, 250, 250);
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  padding: 5px 15px;
+}
+
+.bg_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bg_glass {
+  /* From https://css.glass */
+  background: rgba(250, 239, 239, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+
+.txt_white {
+  color: #fff;
+}
+
+.txt_orange {
+  color: #693568;
+}
+
+.center_of_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.first_lvl_text {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.sec_lvl_text {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.third_lvl_text {
+  font-size: 40px;
+}
+
+.spacing {
+  padding-top: 5%;
+}
+
+.block {
+  display: block;
+}
+
+.container_size {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.txt_center {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  margin-top: 2%;
+  padding: 20px;
+  float: left;
+  position: relative;
+  justify-content: space-evenly;
+  left: 10%;
+  right: 10%;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin-left: 10%;
+  text-align: center;
+  height: 300px;
+  padding: 50px;
+}
+
+.div_center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.txtfield {
+  width: 20%;
+  height: 50px;
+  margin: 2%;
+  padding: 10px;
+  border-radius: 10px;
+  border: #693568 solid 1px;
+}
+
+.txtfield_xl {
+  display: block;
+  margin: auto;
+  width: 69%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: #693568 solid 1px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid #693568;
+filter: blur(4px);
+  height: 50px;
+  width: 200px;
+  color: #ffffff;
+  font-size: 15px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  margin-right: 50px !important;
+}
+
+.txt_end {
+  font-family: "Pacifico", serif;
+}
+
+.container_mid_size {
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+}
