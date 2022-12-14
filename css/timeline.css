@@ -117,7 +117,7 @@ header p {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #FF6700;
+  background: #ee18ca;
   z-index: 5;
   left: 0;
   right: 0;
@@ -128,7 +128,7 @@ header p {
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #FF6700;
+  border-bottom: 4px solid #ee18ca;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -137,7 +137,7 @@ header p {
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #FF6700;
+  border-top: 4px solid #ee18ca;
   bottom: -4px;
 }
 

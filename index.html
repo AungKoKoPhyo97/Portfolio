@@ -5,9 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/21895b1bd0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="Javascript/index.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
-
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/timeline.css" />
   <link rel="stylesheet" href="css/skillbar.css" />
@@ -220,24 +220,28 @@
         </div>
       </div>
     </div>
-    <h3 class="txt_center txt_white">GET RESUME HERE</h3>
-    <div class="div_center">
-      <input class="btn shake-horizontal" type="button" value="Download"
-        onclick="window.location.href='https://c187.pcloud.com/dHZXOCfMwZmMMam3ZLK5oZZR4CKc7Z2ZZ9W4ZkZxz4DVZAeThXEjuRBRl92Gxd0rmimsjUHk0/AUNG_KO_KO_PHYO.docx'">
-    </div>
-    <h3 class="txt_center txt_white">VIST MY GITHUB</h3>
-    <a href="https://github.com/AungKoKoPhyo97" class="fa-brands fa-github fa-2xl txt_white div_center"></a>
-    <h1 class="txt_white txt_center vibrate-1">Hire Me</h1>
-    <form action="mailto:akkp.1997.kp@gmail.com?subject=Mail from my portfolio"" method=" post" enctype="text/plain">
-      <div class="div_center">
-        <input class="txtfield" type="text" name="name" placeholder="Name">
-        <input class="txtfield" type="text" name="mail" placeholder="Email">
-        <input class="txtfield" type="text" name="subject" placeholder="Subject">
+    <div class="div_resume">
+      <div class="txt_center">
+        <h3 class="txt_white">GET RESUME HERE</h3>
+        <input class="btn shake-horizontal" type="button" value="Download"
+          onclick="window.location.href='https://c187.pcloud.com/dHZXOCfMwZmMMam3ZLK5oZZR4CKc7Z2ZZ9W4ZkZxz4DVZAeThXEjuRBRl92Gxd0rmimsjUHk0/AUNG_KO_KO_PHYO.docx'">
       </div>
-      <input class="txtfield_xl" type="text" name="comment" size="200" placeholder="Your Message"><br><br>
+      <div class="txt_center">
+        <h3 class="txt_white">VISIT MY GITHUB</h3>
+        <a href='https://github.com/AungKoKoPhyo97' class="fa-brands fa-github fa-3x fa-bounce txt_white"></a>
+      </div>
+    </div>
+    <h1 class="txt_white txt_center">Hire Me</h1>
+    <form id="contactform" method="POST" enctype="text/plain">
+      <div class="div_center spa">
+        <input class="txtfield" type="text" id="name" placeholder="Name" maxlength="48">
+        <input class="txtfield mail" type="text" id="email" placeholder="Email"  maxlength="48">
+        <input class="txtfield" type="text" id="subject" placeholder="Subject"  maxlength="48">
+      </div>
+      <textarea class="textarea" id="comment" cols="40" placeholder="Your Message" rows="5" maxlength="2048"></textarea>
       <div class="div_center">
-        <input class="btn" type="reset" value="Reset">
-        <input class="btn shake-horizontal" type="submit" value="Send">
+        <input class="btn" type="reset" value="Reset" onclick="clearData()">
+        <input class="btn shake-horizontal" type="submit" value="Send" onclick="sendMail()">
       </div>
     </form>
     <div class="bg_image_end">
