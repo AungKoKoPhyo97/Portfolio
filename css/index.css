@@ -152,7 +152,6 @@ body {
   height: 50px;
   margin: 2%;
   padding: 10px;
-  border-radius: 10px;
   border: #fefefe solid 2px;
 }
 
@@ -164,7 +163,6 @@ body {
   width: 69%;
   height: 200px;
   padding: 10px;
-  border-radius: 10px;
   border: #ffffff solid 2px;
   margin-bottom: 20px;
 }
